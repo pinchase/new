@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tnowledge Forge</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+<styel>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+background-color:#f4f4f4;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+padding:20px 0;
+}
+header {
+    background-color: #3498DB;
+    color:#2C3E50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+nav ul li a{
+    margin-left: 1rem;
+    color: rgb(15, 15, 15);
+}
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #14dd24;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.hero {
+    background-color: #F0F8FF;
+    color: #2C3E50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+.hero-content {
+    width: 50%;
+}
+.hero-image img{
+    width: 100%;
+    height: 300px;
+    background-color: #ddd;
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3498DB;
+    color: #333;
+    padding: 1rem 0;
+}
+.stat {
+    text-align: center;
+}
+.services {
+    padding: 2rem 0;
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.service {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    position: relative;
+
+}
+.specialties {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.specialty {
+    background-color: #f4f4f4;
+    padding: 0.5rem;
+    text-align: center;
+}
+.categories {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.category {
+    background-color: #f4f4f4;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.doctors {
+    padding: 2rem 0;
+}
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.doctor {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+}
+.doctor-image img{
+    width: 100%;
+    height: 150px;
+    background-color: #ddd;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #02199b;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+.steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.step {
+    text-align: center;
+    width: 22%;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.step-icon img{
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+.doctor-anywhere {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.doctor-content {
+    width: 45%;
+}
+.doctor{
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+.doctor-image img{
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+}
+.urgent-care {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.urgent-image img{
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+}
+.urgent-content {
+    width: 45%;
+}
+.testimonials {
+    margin-bottom: 40px;
+}
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+}
+.testimonial-image img{
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.register {
+    background-color: #0a23ad;
+    padding: 20px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-section {
+    width: 22%;
+}
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+.social-icon a img {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.logo{
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 44px;
+    background-color: rgb(236, 241, 236);
+    border-radius: 30%;
+    padding: 12px;
+    color: navy;
+}
+</style>
+</head>
+<body>
+   
+    <div class="container">
+        <header>
+            <div class="logo">TKF</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="#" class="btn">Login</a>
+                <a href="#" class="btn">Sign Up</a>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Learn Anytime, Anywhere</h1>
+                <p>Our online learning platform gives you the freedom to learn whenever 
+                    and wherever you want. With our extensive library of courses, you can access engaging and informative content at your own pace, whether you're at home, on the go, or in the office. Our user-friendly interface and flexible learning 
+                    options make it easy to fit learning into your busy schedule.</p>
+                <a href="#" class="btn">Book Now</a>
+                <!-- <button id="playVideo" class="btn">Play Video</button> -->
+            </div>
+            <div class="hero-image">
+                <img src="log.png" alt="hero image">
+            </div>
+        </section>
+
+        <!-- <section class="stats">
+            <div class="stat">
+                <h2>95%</h2>
+                <p>Satisfaction</p>
+            </div>
+            <div class="stat">
+                <h2>1,500+</h2>
+                <p>Graduates</p>
+            </div>
+            <div class="stat">
+                <h2>3,000+</h2>
+                <p>On-board students</p>
+            </div>
+            <div class="stat">
+                <h2>100%</h2>
+                <p>Support</p>
+            </div>
+        </section> -->
+
+        <section class="services">
+            <h2>Our Best Services</h2>
+            <div class="service-grid">
+                <div class="service">
+                    <h3>Interactive Courses</h3>
+                    <p>Engaging and interactive courses that use a variety of learning formats, such as videos, quizzes,
+                         and simulations, to keep learners interested and motivated.</p>
+                </div>
+                <div class="service">
+                    <h3>Personalized Learning Plans</h3>
+                    <p> Customized learning plans that cater to individual learners' needs and goals.</p>
+                </div>
+                <div class="service">
+                    <h3>Community Support</h3>
+                    <p>A supportive online community where learners can connect with each other, ask questions, 
+                        and share their learning experiences.</p>
+                </div>
+                <div class="service">
+                    <h3>Career Guidance</h3>
+                    <p>Career advice and support to help learners transition into 
+                        new careers or advance in their current ones.</p>
+                </div>
+            </div>
+            <div class="specialties">
+                <div class="specialty">Technology:</div>
+                <div class="specialty">Business:</div>
+                <div class="specialty">Design:</div>
+                <div class="specialty">Creative Arts:</div>
+                <div class="specialty">Health and Wellness</div>
+                <div class="specialty">Personal Development: </div>
+            </div>
+            <h3>Are You Looking For:</h3>
+            <div class="categories">
+                <div class="category">Quality Content:</div>
+                <div class="category">Community and Support: </div>
+                <div class="category">Credentials and Recognition</div>
+                <div class="category">Flexibility and Accessibility: </div>
+            </div>
+        </section>
+
+        <section class="doctors">
+            <h2>Our Best Instructors</h2>
+            <div class="doctor-grid">
+                <div class="doctor">
+                    <div class="doctor-image">,<img src="teacheer1.jpeg" alt="Alex" ></div>
+                    <h3>Dr. Alex, Ph.D.</h3>
+                </div>
+                <div class="doctor">
+                    <div class="doctor-image"> <img src="teacher.jpeg" alt="robert"> </div>
+                    <h3>Dr. Robert, Ph.D.</h3>
+                </div>
+                <div class="doctor">
+                    <div class="doctor-image"><img src="teacher2.jpeg" alt="Angel"> </div>
+                    <h3>Dr. Angel, Ph.D.</h3>
+                </div>
+                <div class="doctor">
+                    <div class="doctor-image"><img src="teacher3.jpeg" alt="Russ"> </div>
+                    <h3>Dr. Rustin, Ph.D.</h3>
+                </div>
+            </div>
+        </section>
+        <h2>Easy Steps And Get Your Solution</h2>
+ <section class="steps">
+            
+            <div class="step">
+                <div class="step-icon"><img src="profile.jpeg" alt=""></div>
+                <h3>Check Instructors Profile</h3>
+                <p>Check Instructors' Profiles to see their experience, qualifications, and teaching style before you enroll in their courses.
+                     Make an informed decision about your education!</p>
+            </div>
+            <div class="step">
+                <div class="step-icon"><img src="consult.jpeg" alt=""></div>
+                <h3>Request Consultation</h3>
+                <p>Request Consultation is a feature that allows you 
+                    to schedule a consultation with a  professional. This feature can be used to discuss health concerns, 
+                    ask questions, and receive personalized advice.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon"><img src="do.jpeg" alt=""></div>
+                <h3>Receive Your Consultation</h3>
+                <p>Unlock expert insights! Receive personalized consultation from our professional assistant, clarifying doubts and providing 
+                    tailored solutions to accelerate your learning journey."</p>
+            </div>
+            <div class="step">
+                <div class="step-icon"><img src="solution.jpeg" alt=""></div>
+                <h3>Get Your Solution</h3>
+                <p>Find answers fast! Get Your Solution with our professional assistant, providing step-by-step explanations
+                     and accurate results to help you overcome learning obstacles</p>
+            </div>
+        </section>
+
+        <section class="doctor-anywhere">
+            <div class="doctor-content">
+                <h2>Best Instructors Anywhere And Anytime</h2>
+                <p>Unlock your full potential with our global network of expert instructors! Learn from the best, anywhere, anytime, and get personalized 
+                    guidance, flexible scheduling, and cutting-edge knowledge. Our top-notch instructors are dedicated to your academic success, providing one-on-one support 
+                    to help you achieve your goals and excel in your studies</p>
+                <button class="btn">Find Instructor Now</button>
+            </div>
+            <div class="doctor-image"><img src="pic1.jpeg" alt=""></div>
+        </section>
+
+        <section class="urgent-care">
+            <div class="urgent-image"><img src="pic.jpeg" alt=""></div>
+            <div class="urgent-content">
+                <h2>Urgent Online Care Solution Your Problem</h2>
+                <p>Stuck with a problem? Get instant help with our Urgent Online Care Solution! Our expert tutors are available 24/7 to provide one-on-one support,
+                     guiding you through challenging topics and ensuring you stay on track. Quick, reliable, and personalized help
+                     - whenever and wherever you need it</p>
+                <button class="btn">Take Appointment</button>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What People Say About Us</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="testimonial-image"><img src="stude.jpeg" alt=""></div>
+                    <h3>Mwenje James</h3>
+                    <p>I was hesitant to try online learning, but <strong>TKF</strong> exceeded my expectations. The interactive lessons and real-time feedback made complex concepts easy to grasp. The tutors are patient, encouraging,
+                         and genuinely invested in my success. With <strong>TKF</strong>, I've been able to achieve my academic goals and pursue my dreams. I highly recommend it to 
+                        anyone looking for a supportive and effective online learning experience!</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-image"><img src="studee.jpeg" alt=""></div>
+                    <h3>Mwende Alice</h3>
+                    <p>I was struggling to keep up with my coursework, but then I discovered <strong>TKF</strong>. The personalized attention and flexible scheduling allowed
+                         me to learn at my own pace and finally
+                         understand the material. The instructors are knowledgeable, supportive, and always available to help. I've seen a significant
+                         improvement in my grades and confidence - thank you <strong>TKF</strong>!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="register">
+            <h1>Want to Register Easily?</h1>
+            <button class="btn">Submit Here</button>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The knowledge Forge</h3>
+                    <p>Igniting minds, forging futures: Empowering learners 
+                        to shape their destiny through knowledge, skills, and innovation.</p>
+                    <div class="social-icons">
+                        <div class="social-icon"><a><img src="fb.jpeg" alt=""></a></div>
+                        <div class="social-icon"><a><img src="ig.jpeg" alt=""></a></div>
+                        <div class="social-icon"><a><img src="in.jpeg" alt=""></a></div>
+                        <div class="social-icon"><a><img src="x.jpeg" alt=""></a></div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Online Support</li>
+                        <li>Free Consultancy</li>
+                        <li>24/7 Service</li>
+                        <li>Make Appointment</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>About us</li>
+                        <li>Help & Support</li>
+                        <li>Terms and Conditions</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>User</h3>
+                    <ul>
+                        <li>Login</li>
+                        <li>Register</li>
+                        <li>Instructor Register</li>
+                        <li>Appointment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
